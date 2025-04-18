@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Tour</title>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <!-- Add theme toggle as one of the mobile icons -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Desktop Navbar -->
+    <header>
+        <div class="background-container">
+            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top d-none d-md-flex">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><h3 class="nav-brand">TRAVEL</h3></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="#Homepage" class="nav-link active" aria-current="page">
+                                    <i class="fas fa-home me-1"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Book" class="nav-link">
+                                    <i class="fas fa-calendar-alt me-1"></i> Book
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Packages" class="nav-link">
+                                    <i class="fas fa-suitcase me-1"></i> Packages
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Services" class="nav-link">
+                                    <i class="fas fa-concierge-bell me-1"></i> Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Gallery" class="nav-link">
+                                    <i class="fas fa-images me-1"></i> Gallery
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Review" class="nav-link">
+                                    <i class="fas fa-star me-1"></i> Review
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Contact" class="nav-link">
+                                    <i class="fas fa-envelope me-1"></i> Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Mobile Bottom Navbar -->
+<nav class="mobile-navbar fixed-bottom d-flex d-md-none">
+  <div class="container-fluid">
+      <div class="mobile-nav-icons">
+          <a href="#Homepage" class="active" aria-label="Home">
+              <i class="fas fa-home"></i>
+          </a>
+          <a href="#Book" aria-label="Book">
+              <i class="fas fa-calendar-alt"></i>
+          </a>
+          <a href="#Packages" aria-label="Packages">
+              <i class="fas fa-suitcase"></i>
+          </a>
+          <a href="#Gallery" aria-label="Gallery">
+              <i class="fas fa-images"></i>
+          </a>
+          <a href="#Review" aria-label="Review">
+              <i class="fas fa-star"></i>
+          </a>
+          <a href="#Contact" aria-label="Contact">
+              <i class="fas fa-envelope"></i>
+          </a>
+      </div>
+  </div>
+</nav>
+
+    <!-- Homepage Section (Video Carousel) -->
+    <section id="Homepage">
+        <div id="videoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video width="100%" autoplay loop muted playsinline>
+                        <source src="Videos/coverr-beach-to-the-ocean-170-1080p.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video width="100%" autoplay loop muted playsinline>
+                        <source src="Videos/coverr-a-road-in-norway-4488-1080p.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video width="100%" autoplay loop muted playsinline>
+                        <source src="Videos/coverr-hotel-in-the-philippines-2930-1080p.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-text">
+                <h2 class="carousel-h2">ADVENTURE IS WORTHWHILE</h2>
+                <p class="carousel-p">Discover New Places With Us. Adventure Awaits</p>
+                <a href="#Book" class="custom-btn">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Now Section -->
+    <section id="Book" class="py-5">
+        <div class="container">
+            <h2 class="book-now text-center mb-4"><i class="fas fa-calendar-alt me-2"></i>BOOK NOW</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="Images/travel-3122702_1280.jpg" alt="Travelling" class="img-fluid d-none d-md-block">
+                </div>
+                <div class="col-md-6">
+                    <form class="form-container" id="book-form">
+                        <div class="mb-3">
+                            <label for="searchPlaces" class="form-label"><i class="fas fa-map-marker-alt me-2"></i>Where To</label>
+                            <select class="form-control" id="searchPlaces" name="destination" required>
+                                <option value="" disabled selected>Select a destination</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Greece">Greece</option>
+                                <option value="France">France</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Thailand">Thailand</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numberOfGuests" class="form-label"><i class="fas fa-users me-2"></i>How Many</label>
+                            <input type="number" class="form-control" id="numberOfGuests" name="guests" placeholder="Number of guests" min="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dateOfArrivals" class="form-label"><i class="fas fa-calendar-day me-2"></i>Arrival</label>
+                            <input type="date" class="form-control" id="dateOfArrivals" name="arrival" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dateOfDeparture" class="form-label"><i class="fas fa-calendar-day me-2"></i>Departure</label>
+                            <input type="date" class="form-control" id="dateOfDeparture" name="departure" required>
+                        </div>
+                        <button type="submit" class="custom-btn"><i class="fas fa-paper-plane me-2"></i>Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="Packages" class="py-5">
+        <div class="container">
+            <h2 class="book-now text-center mb-4"><i class="fas fa-suitcase me-2"></i>PACKAGES</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/vacation.jpeg" class="card-img-top" alt="Maldives">
+                        <div class="card-body">
+                            <h6 class="card-title"><i class="fas fa-location-dot"></i> Maldives</h6>
+                            <p class="card-text">Adventure is worthwhile. Discover new places with us. Adventure awaits.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p class="card-text">$99.99 <s>$199.99</s></p>
+                            <a href="#Book" class="custom-btn"><i class="fas fa-bookmark me-2"></i>Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/boat-ride.jpg" class="card-img-top" alt="Switzerland">
+                        <div class="card-body">
+                            <h6 class="card-title"><i class="fas fa-location-dot"></i> Switzerland</h6>
+                            <p class="card-text">Adventure is worthwhile. Discover new places with us. Adventure awaits.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p class="card-text">$99.99 <s>$199.99</s></p>
+                            <a href="#Book" class="custom-btn"><i class="fas fa-bookmark me-2"></i>Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/port-8431044_1280.jpg" class="card-img-top" alt="Italy">
+                        <div class="card-body">
+                            <h6 class="card-title"><i class="fas fa-location-dot"></i> Italy</h6>
+                            <p class="card-text">Adventure is worthwhile. Discover new places with us. Adventure awaits.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p class="card-text">$99.99 <s>$199.99</s></p>
+                            <a href="#Book" class="custom-btn"><i class="fas fa-bookmark me-2"></i>Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button id="show-card-btn" class="custom-btn"><i class="fas fa-chevron-down me-2"></i>Show More</button>
+            </div>
+            <div class="row mt-4" id="hidden-card" style="display: none;">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/road-trip.jpg" class="card-img-top" alt="Mexico">
+                        <div class="card-body">
+                            <h6 class="card-title"><i class="fas fa-location-dot"></i> Mexico</h6>
+                            <p class="card-text">Adventure is worthwhile. Discover new places with us. Adventure awaits.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p class="card-text">$99.99 <s>$199.99</s></p>
+                            <a href="#Book" class="custom-btn"><i class="fas fa-bookmark me-2"></i>Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/man-dinner.jpg" class="card-img-top" alt="Egypt">
+                        <div class="card-body">
+                            <h6 class="card-title"><i class="fas fa-location-dot"></i> Egypt</h6>
+                            <p class="card-text">Adventure is worthwhile. Discover new places with us. Adventure awaits.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p class="card-text">$99.99 <s>$199.99</s></p>
+                            <a href="#Book" class="custom-btn"><i class="fas fa-bookmark me-2"></i>Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/lady-dinner.jpg" class="card-img-top" alt="Greece">
+                        <div class="card-body">
+                            <h6 class="card-title"><i class="fas fa-location-dot"></i> Greece</h6>
+                            <p class="card-text">Adventure is worthwhile. Discover new places with us. Adventure awaits.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p class="card-text">$99.99 <s>$199.99</s></p>
+                            <a href="#Book" class="custom-btn"><i class="fas fa-bookmark me-2"></i>Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="Services" class="py-5">
+        <div class="container">
+            <h2 class="book-now text-center mb-4"><i class="fas fa-concierge-bell me-2"></i>SERVICES</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <span class="service-icon"><i class="fas fa-hotel"></i></span>
+                    <h4 class="book-now">Affordable Hotels</h4>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <span class="service-icon"><i class="fas fa-utensils"></i></span>
+                    <h4 class="book-now">Food And Drinks</h4>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <span class="service-icon"><i class="fas fa-bullhorn"></i></span>
+                    <h4 class="book-now">Safety Guide</h4>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <span class="service-icon"><i class="fas fa-globe"></i></span>
+                    <h4 class="book-now">Around The World</h4>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <span class="service-icon"><i class="fas fa-plane"></i></span>
+                    <h4 class="book-now">Fastest Travel</h4>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <span class="service-icon"><i class="fas fa-hiking"></i></span>
+                    <h4 class="book-now">Adventures</h4>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="Gallery" class="py-5">
+        <div class="container">
+            <h2 class="book-now text-center mb-4"><i class="fas fa-images me-2"></i>GALLERY</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div id="image-slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Images/Greece.jpg" alt="Greece" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/Greece night.jpg" alt="Greece at night" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/Italy night.jpg" alt="Italy at night" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/Norway.jpg" alt="Norway" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/road-trip.jpg" alt="Road trip" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/Nice beach.jpg" alt="Beach" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/night-view.jpg" alt="Night view of Greece" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/Pyramid.jpg" alt="Egypt pyramids" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/italy.jpg" alt="Italy" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/beautiful-resort.jpg" alt="Beach resort" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/201 Truly Inspiring Hiking Quotes To Make You Pack Bags To Mountains!.jpeg" alt="Hiking" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/Download premium image of Snow mountain landscape outdoors nature_  by Sakarin Sukmanatham about winter landscape, glacier, 8k, aerial view, and blue 12422102.jpeg" alt="Snow mountain" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/Skydiving, New Zealand - Travel Adventure.jpeg" alt="Skydiving in New Zealand" class="img-fluid">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#image-slider" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#image-slider" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="gallery-text">
+                        <h2><i class="fas fa-camera me-2"></i>Snapshots of Life</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#Book" class="custom-btn"><i class="fas fa-bookmark me-2"></i>Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="Review" class="py-5">
+        <div class="container">
+            <h2 class="book-now text-center mb-4"><i class="fas fa-star me-2"></i>REVIEW</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/black man.jpg" alt="John Doe" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-user me-2"></i>John Doe</h5>
+                            <p class="card-text">This is a testimonial about our page from our various customers about their experience using our services.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/happy man.jpg" alt="John Doe" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-user me-2"></i>John Doe</h5>
+                            <p class="card-text">This is a testimonial about our page from our various customers about their experience using our services.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/white lady.jpg" alt="Jane Doe" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-user me-2"></i>Jane Doe</h5>
+                            <p class="card-text">This is a testimonial about our page from our various customers about their experience using our services.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/white lady.jpg" alt="Jane Doe" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-user me-2"></i>Jane Doe</h5>
+                            <p class="card-text">This is a testimonial about our page from our various customers about their experience using our services.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/black man.jpg" alt="John Doe" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-user me-2"></i>John Doe</h5>
+                            <p class="card-text">This is a testimonial about our page from our various customers about their experience using our services.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/happy man.jpg" alt="Jane Doe" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-user me-2"></i>Jane Doe</h5>
+                            <p class="card-text">This is a testimonial about our page from our various customers about their experience using our services.</p>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="py-5">
+        <div class="container">
+            <h2 class="book-now text-center mb-4"><i class="fas fa-envelope me-2"></i>CONTACT</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="Images/travel-3122702_1280.jpg" alt="Adventure" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <form class="contact-form" id="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label"><i class="fas fa-user me-2"></i>Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label"><i class="fas fa-envelope me-2"></i>Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label"><i class="fas fa-phone me-2"></i>Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="subject" class="form-label"><i class="fas fa-tag me-2"></i>Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label"><i class="fas fa-comment me-2"></i>Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="custom-btn"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-light text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4 class="footer-text"><i class="fas fa-map-marker-alt me-2"></i>Our Branches</h4>
+                    <p><i class="fas fa-location-dot me-2"></i>France</p>
+                    <p><i class="fas fa-location-dot me-2"></i>Italy</p>
+                    <p><i class="fas fa-location-dot me-2"></i>UK</p>
+                    <p><i class="fas fa-location-dot me-2"></i>Egypt</p>
+                    <p><i class="fas fa-location-dot me-2"></i>India</p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4 class="footer-text"><i class="fas fa-link me-2"></i>Quick Links</h4>
+                    <p><i class="fas fa-arrow-right me-2"></i><a href="#Homepage">Home</a></p>
+                    <p><i class="fas fa-arrow-right me-2"></i><a href="#Book">Book</a></p>
+                    <p><i class="fas fa-arrow-right me-2"></i><a href="#Packages">Packages</a></p>
+                    <p><i class="fas fa-arrow-right me-2"></i><a href="#Services">Services</a></p>
+                    <p><i class="fas fa-arrow-right me-2"></i><a href="#Gallery">Gallery</a></p>
+                    <p><i class="fas fa-arrow-right me-2"></i><a href="#Review">Review</a></p>
+                    <p><i class="fas fa-arrow-right me-2"></i><a href="#Contact">Contact</a></p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4 class="footer-text"><i class="fas fa-address-card me-2"></i>Contact Info</h4>
+                    <p><i class="fas fa-phone me-2"></i>+234 813 191 8048</p>
+                    <p><i class="fas fa-phone me-2"></i>+234 813 191 8048</p>
+                    <p><i class="fas fa-envelope me-2"></i>abrahamefe307@gmail.com</p>
+                    <p><i class="fas fa-location-dot me-2"></i>Lagos, Nigeria</p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4 class="footer-text"><i class="fas fa-share-alt me-2"></i>Follow Us</h4>
+                    <p><i class="fab fa-facebook me-2"></i>Facebook</p>
+                    <p><i class="fab fa-twitter me-2"></i>Twitter</p>
+                    <p><i class="fab fa-instagram me-2"></i>Instagram</p>
+                    <p><i class="fab fa-linkedin me-2"></i>LinkedIn</p>
+                    <p><i class="fab fa-whatsapp me-2"></i>WhatsApp</p>
+                    <p><i class="fab fa-pinterest me-2"></i>Pinterest</p>
+                </div>
+            </div>
+            <hr>
+            <h5 class="copyright-text text-center">Created By <span class="book-now">ABTECH</span> | All Rights Reserved</h5>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
